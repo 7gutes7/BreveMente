@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neural: #304768;
+  --color-neural-dark: #223348;
+  --color-neural-deep: #1a2a40;
+  --color-neural-soft: #edf1f7;
+  --color-neural-tint: #dbe3ee;
+  --color-conciencia: #75afbc;
+  --color-conciencia-dark: #5c93a1;
+  --color-conciencia-deep: #3f7481;
+  --color-conciencia-soft: #e4f0f3;
+  --color-digital: #f4f4f4;
+  --color-digital-bright: #fafafa;
+  --color-ink: #1a2230;
+  --color-ink-soft: #4a5568;
+  --color-ink-muted: #6b7686;
+  --color-border-soft: #e2e6ec;
+
+  --font-sans: var(--font-inclusive), ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-card: 0 1px 2px rgba(26, 34, 48, 0.04), 0 8px 24px rgba(26, 34, 48, 0.06);
+  --shadow-card-hover: 0 2px 4px rgba(26, 34, 48, 0.05), 0 16px 40px rgba(26, 34, 48, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-digital);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-conciencia-soft);
+  color: var(--color-neural-deep);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+}
