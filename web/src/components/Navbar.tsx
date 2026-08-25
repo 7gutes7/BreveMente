@@ -41,17 +41,13 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href={process.env.NEXT_PUBLIC_APP_URL || "http://localhost:5173"}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/prototipo"
             className="text-sm font-semibold text-neural transition-colors hover:text-neural-dark"
           >
             Acceso a la App
           </a>
           <a
-            href={process.env.NEXT_PUBLIC_APP_URL || "http://localhost:5173"}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/prototipo"
             className="rounded-lg bg-neural px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-neural-dark"
           >
             Abrir Prototipo
@@ -87,9 +83,7 @@ export function Navbar() {
             ))}
           </div>
           <a
-            href={process.env.NEXT_PUBLIC_APP_URL || "http://localhost:5173"}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/prototipo"
             onClick={() => setOpen(false)}
             className="mt-4 block rounded-lg bg-neural px-5 py-3 text-center text-sm font-semibold text-white"
           >
