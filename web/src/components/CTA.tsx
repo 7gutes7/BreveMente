@@ -4,7 +4,22 @@ export function CTA() {
   return (
     <section id="contacto" className="bg-digital py-20 lg:py-28">
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
-        <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-neural-deep via-neural to-conciencia-deep px-7 py-16 text-center shadow-card-hover sm:px-14 lg:py-20">
+        <div className="relative overflow-hidden rounded-[2.5rem] bg-neural-deep px-7 py-16 text-center shadow-card-hover sm:px-14 lg:py-20">
+          {/* Background Video */}
+          <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-full object-cover opacity-35 scale-105 filter brightness-110"
+            >
+              <source src="/Glass_planes_shifting_depth.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-br from-neural-deep/90 via-neural/80 to-conciencia-deep/85" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(117,175,188,0.3),transparent_70%)]" />
+          </div>
+
           <div
             aria-hidden
             className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-conciencia/30 blur-3xl"
@@ -14,7 +29,7 @@ export function CTA() {
             className="pointer-events-none absolute -bottom-32 -left-20 h-80 w-80 rounded-full bg-neural-tint/20 blur-3xl"
           />
 
-          <div className="relative">
+          <div className="relative z-10">
             <p className="text-sm font-semibold uppercase tracking-wider text-conciencia">
               Únete a la nueva era clínica
             </p>

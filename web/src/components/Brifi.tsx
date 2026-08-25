@@ -82,8 +82,26 @@ function BrifiChat() {
 
 export function Brifi() {
   return (
-    <section id="brifi" className="border-y border-border-soft bg-white py-20 lg:py-28">
-      <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 lg:grid-cols-2 lg:gap-16 lg:px-8">
+    <section id="brifi" className="relative overflow-hidden border-y border-border-soft bg-white py-20 lg:py-28">
+      {/* Video Background en la mitad derecha con bordes difuminados */}
+      <div aria-hidden className="pointer-events-none absolute inset-y-0 right-0 -z-0 w-full lg:w-3/5 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="h-full w-full object-cover opacity-80 filter brightness-105 contrast-105"
+        >
+          <source src="/Glass_discs_in_diagonal_cascade.mp4" type="video/mp4" />
+        </video>
+        {/* Difuminado suave progresivo en los extremos (izquierda, superior, inferior y derecha) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-transparent to-white/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,transparent_35%,rgba(255,255,255,0.95)_95%)]" />
+      </div>
+
+      <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-14 px-5 lg:grid-cols-2 lg:gap-16 lg:px-8">
         <div className="order-2 lg:order-1">
           <BrifiChat />
         </div>

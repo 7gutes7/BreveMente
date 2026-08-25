@@ -58,8 +58,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ userRole, onLogout }) => {
   return (
     <aside className="w-64 bg-clinical-dark text-white flex flex-col shrink-0 h-screen shadow-lg border-r border-slate-800">
       {/* Brand Header */}
-      <div className="p-5 border-b border-slate-800 flex items-center justify-center">
-        <Logo type="horizontal-oscuro" className="h-10" />
+      <div className="p-4 border-b border-slate-800 flex items-center justify-center">
+        <Logo type="horizontal-oscuro" className="h-9 w-auto max-w-[190px] object-contain" />
       </div>
 
       {/* Nav Menu */}

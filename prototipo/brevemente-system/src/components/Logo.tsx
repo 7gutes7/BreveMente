@@ -8,13 +8,13 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({ type, className = 'h-8' }) => {
   const [hasError, setHasError] = useState(false);
 
-  // NOTA: Rutas oficiales de assets para sustitución posterior
+  // Rutas oficiales de assets
   const logoSrcs = {
-    'horizontal-claro': '/assets/logos/logo-horizontal-claro.png',
-    'horizontal-oscuro': '/assets/logos/logo-horizontal-oscuro.png',
-    'vertical': '/assets/logos/logo-vertical.png',
-    'brain': '/assets/logos/logo-brain.png',
-    'favicon': '/assets/logos/favicon.ico'
+    'horizontal-claro': '/Brevemente01.png',
+    'horizontal-oscuro': '/Brevemente02W.png',
+    'vertical': '/Brevemente02W.png',
+    'brain': '/Brevemente02W.png',
+    'favicon': '/favicon.ico'
   };
 
   const handleImgError = () => {
