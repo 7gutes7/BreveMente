@@ -1,0 +1,12 @@
+{
+  "name": "brevemente-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev:all",
+    "dev:all": "npm run dev --prefix web & npm run dev --prefix prototipo/brevemente-system",
+    "dev:web": "npm run dev --prefix web",
+    "dev:app": "npm run dev --prefix prototipo/brevemente-system",
+    "install:all": "npm install --prefix web && npm install --prefix prototipo/brevemente-system"
+  }
+}

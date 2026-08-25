@@ -74,10 +74,15 @@ function HeroMockup() {
         </div>
 
         <div className="flex items-center gap-3 border-t border-border-soft bg-digital-bright px-5 py-3.5">
-          <button className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-neural px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-neural-dark">
+          <a
+            href={process.env.NEXT_PUBLIC_APP_URL || "http://localhost:5173"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-neural px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-neural-dark"
+          >
             <Icon name="sparkles" className="h-4 w-4" />
             Brifi rellena expediente
-          </button>
+          </a>
           <button className="flex h-10 w-10 items-center justify-center rounded-lg border border-border-soft text-ink-soft transition-colors hover:bg-digital" aria-label="Regenerar">
             <Icon name="clock" className="h-4 w-4" />
           </button>
@@ -135,7 +140,9 @@ export function Hero() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href="#plataforma"
+              href={process.env.NEXT_PUBLIC_APP_URL || "http://localhost:5173"}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-neural px-7 py-3.5 text-base font-semibold text-white shadow-card transition-all hover:-translate-y-0.5 hover:bg-neural-dark hover:shadow-card-hover"
             >
               Explorar la plataforma
