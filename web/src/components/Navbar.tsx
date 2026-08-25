@@ -18,13 +18,13 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border-soft bg-digital-bright/85 backdrop-blur-md">
       <div className="mx-auto flex h-18 max-w-6xl items-center justify-between px-5 lg:px-8">
-        <a href="#inicio" className="flex items-center gap-2.5" aria-label="BreveMente inicio">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-neural text-white">
-            <Icon name="brain" className="h-5 w-5" strokeWidth={1.6} />
-          </span>
-          <span className="text-xl font-semibold tracking-tight text-neural">
-            Breve<span className="text-conciencia-dark">Mente</span>
-          </span>
+        <a href="#inicio" className="flex items-center py-1" aria-label="BreveMente inicio">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/Brevemente01.png"
+            alt="BreveMente"
+            className="h-9 md:h-10 w-auto object-contain"
+          />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Principal">
